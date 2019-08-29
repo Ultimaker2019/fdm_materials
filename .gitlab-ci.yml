@@ -2,6 +2,7 @@ include:
   - project: ultimaker/stardust/print-cluster-jedi-scripts
     file: /gitlab/gitlab-ci-template.yml
 
+# Override these settings from the template because we don't have a k8s cluster available
 image: docker:19.03.1
 services:
   - docker:19.03.1-dind
@@ -9,6 +10,10 @@ services:
 .common:
   tags:
     - docker
+
+.build:
+  variables:
+    image: registry.gitlab.com/ultimaker/stardust/print-cluster-jedi-scripts/cmake:1.0.0
 
 variables:
   DOCKER_HOST: tcp://docker:2375
