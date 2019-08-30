@@ -13,7 +13,8 @@ services:
 
 .build:
   variables:
-    image: registry.gitlab.com/ultimaker/stardust/print-cluster-jedi-scripts/cmake:1.0.0
+    image: registry.gitlab.com/ultimaker/stardust/print-cluster-jedi-scripts/cmake:1.0.1
+    CMAKE_OPTIONS: "-DCMAKE_INSTALL_PREFIX=/usr -DEMBEDDED=ON"
 
 variables:
   DOCKER_HOST: tcp://docker:2375
