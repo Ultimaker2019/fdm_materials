@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fdmmaterial version="1.3" xmlns="http://www.ultimaker.com/material" xmlns:cura="http://www.ultimaker.com/cura">
+  <metadata>
+    <name>
+      <brand>PolyLite</brand>
+      <material>PETG</material>
+      <color>PolyLite</color>
+      <label>PETG</label>
+    </name>
+    <version>4</version>
+    <GUID>d480b17f-3814-46c4-890c-2c364d297186</GUID>
+    <color_code>#F29030</color_code>
+    <description />
+    <adhesion_info>Use glue for small prints. An adhesion sheet is recommended for larger prints. Set your print speed to a low value (10mm/sec) to get better layer bonding.</adhesion_info>
+  </metadata>
+  <properties>
+    <density>1.25</density>
+    <diameter>1.75</diameter>
+  </properties>
+  <settings>
+    <setting key="print temperature">240.0</setting>
+    <setting key="heated bed temperature">80.0</setting>
+    <setting key="standby temperature">200.0</setting>
+    <setting key="build volume temperature">41</setting>
+    <setting key="retraction amount">2.0</setting>
+    <setting key="retraction speed">45.0</setting>
+    <setting key="print cooling">100.0</setting>
+  </settings>
+</fdmmaterial>
